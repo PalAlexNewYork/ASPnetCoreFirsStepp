@@ -1,0 +1,16 @@
+﻿
+<h3>@Model.currCategory</h3>
+     @{
+        foreach (var car in Model.AllCars)
+        {
+            <div style="width:800px; border:1px solid black; margin: 10px auto; padding: 20px;">
+                <h3>Model: @car.Name</h3>
+                <p>@car.ShortDescr</p>
+                <h6>Price: @car.Price.ToString("c")</h6>
+                <p>@car.LongDescr</p>
+          
+            </div>
+          
+        }
+    }
+
